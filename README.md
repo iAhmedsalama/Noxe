@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+#Noxe is a website to dispaly the apis fethed from The Movie DB database using React library
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
