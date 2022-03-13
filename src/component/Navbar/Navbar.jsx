@@ -13,7 +13,8 @@ export default class Navbar extends Component {
 
                 <nav className="navbar navbar-expand-lg navbar-dark bg-transparent  fixed-top ">
 
-                    <div className="container fixed">
+                    <div className="container-fluid d-flex">
+
 
                         <NavLink className="navbar-brand" to="/">Noxe</NavLink>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,6 +22,8 @@ export default class Navbar extends Component {
                         </button>
 
                         <div className="collapse navbar-collapse " id="navbarSupportedContent">
+
+
 
                             <ul className="navbar-nav mr-auto ">
                                 <li className="nav-item active px-2">
@@ -52,7 +55,7 @@ export default class Navbar extends Component {
                         </div>
 
 
-                        <div className="d-flex justify-content-center " >
+                        <div className="d-flex justify-content-center align-items-center ">
 
 
                             <form className="d-flex">
@@ -80,33 +83,28 @@ export default class Navbar extends Component {
                             </ul>
 
 
+                            <ul className="d-flex justify-content-center align-items-center list-unstyled mb-0">
+                                <li>
+                                    <NavLink className="nav-link" to="/login">
+                                        <button className="btn mx-3 btn-info  fontColor ">login</button>
+
+                                    </NavLink>
+
+                                </li>
+
+                                <li>
+
+                                    <NavLink className="nav-link" to="/Register">
+                                        <button className="btn  btn-info fontColor ">Register</button>
+
+                                    </NavLink>
+                                </li>
+                            </ul>
 
                         </div>
 
                     </div>
-
-                    <ul className="d-flex justify-content-center align-items-center list-unstyled mb-0">
-                        <li>
-                            <NavLink className="nav-link" to="/login">
-                                <button className="btn mx-3 btn-info  fontColor ">login</button>
-
-                            </NavLink>
-
-                        </li>
-
-                        <li>
-
-                            <NavLink className="nav-link" to="/Register">
-                                <button className="btn  btn-info fontColor ">Register</button>
-
-                            </NavLink>
-                        </li>
-                    </ul>
-
                 </nav>
-
-
-
             </section>
         )
     }

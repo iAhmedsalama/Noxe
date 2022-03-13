@@ -45,13 +45,11 @@ export default class Movies extends Component {
 
                         {this.state.Movies.map((value, index) => {
                             return (
-                                <div key={index} className="col-md-2 py-3">
+                                <div key={index} className="col-sm-12 col-md-4 py-3">
                                     <div className="item">
                                         <img className="w-100" src={'https://image.tmdb.org/t/p/original' + value.poster_path} alt="" />
                                         <h5 className='py-2'>{value?.original_title} {value?.name}</h5>
-                                        <p><span className='text-uppercase' style={{ color: '#09c' }}>overview:</span> {value?.overview}</p>
-                                        <div className='rating'>{value?.vote_average}</div>
-                                        <div></div>
+                                        <div className='rating_movies'>{value?.vote_average}</div>
                                     </div>
                                 </div>
                             )

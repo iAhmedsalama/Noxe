@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from 'react'
 import axios from 'axios'
 
@@ -44,11 +45,11 @@ export default class TvShows extends Component {
                         {this.state.tv.map((value, index) => {
                             return (
 
-                                <div key={index} className="col-md-2">
+                                <div key={index} className="col-sm-12 col-md-4 py-3">
                                     <div className="item">
                                         <img className="w-100" src={'https://image.tmdb.org/t/p/original' + value.poster_path} alt="" />
-                                        <h5>{value?.title} {value?.name}</h5>
-
+                                        <h5 className='py-2'>{value?.title} {value?.name}</h5>
+                                        <div className='rating_Tv'>{value?.vote_average}</div>
                                     </div>
                                 </div>
                             )

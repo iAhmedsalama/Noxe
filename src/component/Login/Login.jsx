@@ -51,8 +51,6 @@ export default class Login extends Component {
     }
 
     render() {
-
-        // console.log(this.props);
         return (
 
             <>

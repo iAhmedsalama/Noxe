@@ -10,7 +10,6 @@ import "jquery/dist/jquery.min.js"
 import "popper.js/dist/umd/popper.min.js"
 import "bootstrap/dist/js/bootstrap.min.js"
 
-// must be after bootstrap
 import './index.css';
 
 // fontawsome
@@ -22,10 +21,8 @@ ReactDOM.render(
   <React.StrictMode>
     
     <BrowserRouter>
-    
       <App />
     </BrowserRouter>
-  
 
   </React.StrictMode>,
   document.getElementById('root')
