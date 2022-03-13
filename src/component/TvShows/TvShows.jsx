@@ -1,6 +1,7 @@
 // @ts-nocheck
 import React, { Component } from 'react'
 import axios from 'axios'
+import key from '../config/keys'
 
 
 export default class TvShows extends Component {
@@ -12,7 +13,7 @@ export default class TvShows extends Component {
     gettvShows = async (mediaType) => {
 
 
-        let { data } = await axios.get(`https://api.theMoviedb.org/3/trending/${mediaType}/day?api_key=52bbcddeda849047525b51d6f8a12361`)
+        let { data } = await axios.get(`https://api.theMoviedb.org/3/trending/${mediaType}/day?api_key=${key.module.mykey}`)
 
         this.setState({
             [mediaType]: data.results
