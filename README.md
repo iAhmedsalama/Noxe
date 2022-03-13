@@ -1,4 +1,4 @@
-#Noxe is a website to dispaly the apis fethed from The Movie DB database using React library
+##Noxe is a website to dispaly the apis fethed from The Movie DB database using React library
 
 ## Getting Started with Create React App
 
