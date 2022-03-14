@@ -3,21 +3,17 @@ import ReactDOM from 'react-dom';
 import App from './App.jsx';
 import {BrowserRouter} from "react-router-dom"
 
-// bootstrap
-import "bootstrap/dist/css/bootstrap.min.css"
 
+import "bootstrap/dist/css/bootstrap.min.css"
 import "jquery/dist/jquery.min.js"
 import "popper.js/dist/umd/popper.min.js"
 import "bootstrap/dist/js/bootstrap.min.js"
-
 import './index.css';
-
-// fontawsome
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import "@fortawesome/fontawesome-free/js/all.min.js"
 
 
-ReactDOM.render(
+ReactDOM.render(   
   <React.StrictMode>
     
     <BrowserRouter>

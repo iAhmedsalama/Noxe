@@ -43,14 +43,14 @@ export default class TvShows extends Component {
 
                             </div>
                         </div>
-                        {this.state.tv.map((value, index) => {
+                        {this.state.tv.map((show, index) => {
                             return (
 
                                 <div key={index} className="col-sm-12 col-md-4 py-3">
                                     <div className="item">
-                                        <img className="w-100" src={'https://image.tmdb.org/t/p/original' + value.poster_path} alt="" />
-                                        <h5 className='py-2'>{value?.title} {value?.name}</h5>
-                                        <div className='rating_Tv'>{value?.vote_average}</div>
+                                        <img className="w-100" src={'https://image.tmdb.org/t/p/original' + show.poster_path} alt="" />
+                                        <h5 className='py-2'>{show?.title} {show?.name}</h5>
+                                        <div className='rating_Tv'>{show?.vote_average}</div>
                                     </div>
                                 </div>
                             )

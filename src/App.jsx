@@ -25,12 +25,10 @@ export default class App extends Component {
           <ProtectedRoutes path="/home" component={Home} />
           <ProtectedRoutes path="/TvShows" component={TvShows} />
           <ProtectedRoutes path="/movies" component={Movies} />
-
           <Route path="/login" component={Login} />
           <Route path="/Register" component={Register} />
           <Redirect exact from="/" to="/Register"></Redirect>
           <Route path="*" component={NotFound} />
-
         </Switch>
 
         <Footer />
