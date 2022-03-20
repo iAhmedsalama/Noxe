@@ -13,22 +13,14 @@ export default class Register extends Component {
     }
 
     getFormData = (e) => {
-
-        // this.user.first_name = e.target.value
         this.user[e.target.name] = e.target.value
-        // console.log(this.user);
     }
 
     sendData = async (e) => {
-        e.preventDefault();
-        // console.log("done");
 
-        // let x = JSON.stringify(this.user);
-        // console.log(x);
+        e.preventDefault();
 
         let { data } = await axios.post("https://route-egypt-api.herokuapp.com/signup", this.user);
-
-        console.log(data);
 
         // clear form after sending data
         if (data.message === "success") {
@@ -40,10 +32,7 @@ export default class Register extends Component {
 
 
         return (
-
-
             <>
-
                 <div className=" w-75 mx-auto mt-100">
 
 

@@ -6,7 +6,6 @@ import key from '../config/keys'
 
 export default class TvShows extends Component {
 
-
     state = {
         tv: []
     }
@@ -21,7 +20,6 @@ export default class TvShows extends Component {
     }
 
     componentDidMount() {
-
         this.gettvShows('tv');
     }
 
